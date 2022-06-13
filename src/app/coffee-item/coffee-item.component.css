@@ -1,0 +1,38 @@
+div {
+    width: 90%;
+    max-width: 400px;
+    display: flex;
+    flex-direction: row;
+    margin: 15px;
+    background-color: #fff;
+    align-items: center;
+    border-radius: 8px;
+    padding: 10px;
+}
+
+p {
+    flex:1;
+    background-color: #fff;
+    padding-left: 30px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #8E6844;
+}
+
+img {
+    width: 200px;
+    height: 200px;
+    border-radius: 6px;
+    object-fit: cover;
+}
+
+@media (max-width: 600px) {
+    img {
+        width: 150px;
+        height: 150px;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+}

@@ -1,0 +1,7 @@
+<div>
+    <label for="coffee-search">Search for coffee</label>
+    <input id="coffee-search" placeholder="Ex: Black coffee" #search><button (click)="searchCoffee(search.value)">Search</button>
+</div>
+<article *ngFor="let coffee of coffees">
+    <app-coffee-item [coffee]="coffee"></app-coffee-item>
+</article>

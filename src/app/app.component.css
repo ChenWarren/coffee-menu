@@ -1,0 +1,23 @@
+header {
+    width: 100%;
+    height: 90px;
+    display: flex;
+    padding: 10px;
+    align-items: center;
+    background-color: #FFE7C3;
+    position: fixed;
+}
+
+img {
+    width: 60px;
+    height: 60px;
+    background-color: #FFE7C3;
+}
+
+h2 {
+    background-color: #FFE7C3;
+}
+
+section{
+    padding-top: 100px;
+}
