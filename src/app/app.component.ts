@@ -15,7 +15,7 @@ export class AppComponent {
 
   ngOnInit(){
     this.dataService.getData().subscribe((res)=>{
-      this.coffeeList = res;;
+      this.coffeeList = res.data;
     })
   }
 }

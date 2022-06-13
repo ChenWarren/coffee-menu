@@ -9,7 +9,7 @@ import { Coffee } from './coffee';
 })
 export class ConfigService {
   
-  private configUrl = 'https://api.sampleapis.com/coffee/hot'
+  private configUrl = 'https://smooth-imaginary-anemone.glitch.me'
 
   constructor(private http: HttpClient) { }
 
@@ -17,8 +17,8 @@ export class ConfigService {
     return throwError(()=> new Error('Error. Pls try again later.'));
   }
 
-  getData(): Observable<Coffee[]> {
-    return this.http.get<Coffee[]>(this.configUrl)
+  getData(): Observable<any> {
+    return this.http.get<any>(this.configUrl)
     .pipe(catchError(this.handleError));
   }
 }
