@@ -1,4 +1,6 @@
 <div *ngIf="coffee">
-    <img [src]="coffee.image" width="200px" >
-    <p>{{coffee.title}}</p>
+        <img [src]="coffee.image" width="200px" >
+        <a routerLink="/coffee/{{coffee.id}}">
+            <p>{{coffee.title}}</p>
+        </a>
 </div>

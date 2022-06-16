@@ -12,6 +12,10 @@ export class CoffeeItemComponent implements OnInit {
 
   constructor() { }
 
+  getDetail(id: number){
+    console.log('detail '+id)
+  }
+
   ngOnInit(): void {
   }
 

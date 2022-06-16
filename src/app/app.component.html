@@ -1,9 +1,10 @@
 <main>
   <header>
-    <img src="../assets/logo.svg" alt="Coffee Menu"/>
-    <h2>Coffee Menu</h2>
+    <div>
+      <img src="../assets/logo.svg" alt="Coffee Menu"/>
+      <h2>Coffee Menu</h2>
+    </div>
+    <app-search></app-search>
   </header>
-  <section>
-    <app-coffee-list [coffees]="coffeeList"></app-coffee-list>
-  </section>
+  <router-outlet></router-outlet>
 </main>

@@ -1,5 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { Coffee } from '../coffee';
+import { ConfigService } from '../config.service';
 
 @Component({
   selector: 'app-coffee-list',
@@ -8,15 +9,18 @@ import { Coffee } from '../coffee';
 })
 export class CoffeeListComponent implements OnInit {
 
-  @Input() coffees: Coffee[] = [];
+  coffeeList: Coffee[] = [];
 
-  constructor() { }
+  constructor(private dataService: ConfigService){}
 
-  searchCoffee(searchText: string){
-    console.log(searchText)
+  searchCoffee(term: string) {
+    console.log(term)
   }
 
-  ngOnInit(): void {
+  ngOnInit(){
+    this.dataService.getData().subscribe((res)=>{
+      this.coffeeList = res.data;
+    })
   }
 
 }
