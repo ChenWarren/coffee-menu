@@ -13,10 +13,6 @@ export class CoffeeListComponent implements OnInit {
 
   constructor(private dataService: ConfigService){}
 
-  searchCoffee(term: string) {
-    console.log(term)
-  }
-
   ngOnInit(){
     this.dataService.getData().subscribe((res)=>{
       this.coffeeList = res.data;
