@@ -11,6 +11,7 @@ export class CoffeeListComponent implements OnInit {
 
   coffeeList: Coffee[] = [];
 
+
   constructor(private dataService: ConfigService){}
 
   ngOnInit(){
@@ -18,5 +19,7 @@ export class CoffeeListComponent implements OnInit {
       this.coffeeList = res.data;
     })
   }
+
+
 
 }

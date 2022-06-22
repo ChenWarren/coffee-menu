@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'coffee-menu';
+  searchText: string = '';
+
+  onSearchTextEntered(searchText: string) {
+    this.searchText = searchText;
+    console.log(searchText);
+  }
 }

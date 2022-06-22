@@ -1,6 +1,6 @@
 <div>
     <label for="coffee-search">Search for coffee</label>
     <form>
-        <input id="coffee-search" placeholder="Ex: Black coffee" #search><button (click)="searchCoffee(search.value)">Search</button>
+        <input [(ngModel)]="enterSearchValue" (input)="onSearchTextChanged()" #search name="searchText"><button (click)="searchCoffee(search.value)">Search</button>
     </form>
 </div>

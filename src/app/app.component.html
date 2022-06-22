@@ -1,10 +1,12 @@
 <main>
   <header>
     <div>
-      <img src="../assets/logo.svg" alt="Coffee Menu"/>
-      <h2>Coffee Menu</h2>
+      <section>
+        <img src="../assets/logo.svg" alt="Coffee Menu"/>
+        <h2>Coffee Menu</h2>
+      </section>
+      <app-search (searchTextChanged)="onSearchTextEntered($event)"></app-search>
     </div>
-    <app-search></app-search>
   </header>
   <router-outlet></router-outlet>
 </main>
