@@ -1,29 +1,35 @@
 div {
     width: 90%;
-    max-width: 400px;
+    max-width: 340px;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     margin: 15px;
     background-color: #fff;
     align-items: center;
     border-radius: 8px;
-    padding: 10px;
+    padding: 20px;
+    box-shadow: 1px 1px 10px #8E6844;
 }
 
 p {
     flex:1;
     background-color: #fff;
     padding-left: 30px;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     font-weight: bold;
     color: #8E6844;
+    padding-top: 20px;
 }
 
 img {
-    width: 200px;
-    height: 200px;
+    width: 300px;
+    height: 300px;
     border-radius: 6px;
     object-fit: cover;
+}
+
+a:link {
+    text-decoration: none;
 }
 
 @media (max-width: 600px) {

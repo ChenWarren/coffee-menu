@@ -9,6 +9,7 @@ import { CoffeeListComponent } from './coffee-list/coffee-list.component';
 import { CoffeeItemComponent } from './coffee-item/coffee-item.component';
 import { CoffeeDetailComponent } from './coffee-detail/coffee-detail.component';
 import { SearchComponent } from './search/search.component';
+import { FilterPipe } from './searchFilter.pipe';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { SearchComponent } from './search/search.component';
     CoffeeListComponent,
     CoffeeItemComponent,
     CoffeeDetailComponent,
-    SearchComponent
+    SearchComponent,
+    FilterPipe
   ],
   imports: [
     BrowserModule,

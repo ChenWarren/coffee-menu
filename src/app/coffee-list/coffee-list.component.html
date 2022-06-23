@@ -1,5 +1,7 @@
 <div>
-    <article *ngFor="let coffee of filteredCoffeeList">
-        <app-coffee-item [coffee]="coffee"></app-coffee-item>
-    </article>
+    <section>
+        <article *ngFor="let coffee of coffeeList | searchFilter: searchText">
+            <app-coffee-item [coffee]="coffee"></app-coffee-item>
+        </article>
+    </section>
 </div>
