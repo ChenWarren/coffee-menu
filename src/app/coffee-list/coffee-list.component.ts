@@ -24,6 +24,7 @@ export class CoffeeListComponent implements OnInit {
       this.coffeeList = res;
     });
     this.searchTextService.currenSearchText.subscribe(text => this.searchText=text);
+    this.filteredCoffeeList = this.coffeeList;
   }
 
 }
