@@ -17,12 +17,12 @@ export class CoffeeDetailComponent implements OnInit {
     private detailService: ConfigService,
   ) { }
 
-  getCoffee(): void {
+  getCoffee(){
     const id = String(this.route.snapshot.paramMap.get('id'));
     this.detailService.getCoffeeDetail(id).subscribe(coffee => this.coffeeDetail = coffee);
   }
 
-  ngOnInit(): void {
+  ngOnInit(){
     this.getCoffee();
   }
 
