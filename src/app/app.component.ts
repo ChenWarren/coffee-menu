@@ -11,6 +11,5 @@ export class AppComponent {
 
   onSearchTextEntered(searchText: string) {
     this.searchText = searchText;
-    console.log(searchText);
   }
 }
