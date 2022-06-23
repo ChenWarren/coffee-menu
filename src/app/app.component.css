@@ -43,9 +43,15 @@ section {
 }
 
 @media (max-width: 600px) {
+    header{
+        padding: 0 5px 0 5px;
+        height: 80px;
+    }
+
     h2 {
         display: none;
     }
+
     div {
         width: 100%;
     }

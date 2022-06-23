@@ -38,10 +38,10 @@ a:link {
 }
 
 @media (max-width: 600px) {
-    img {
+    /* img {
         width: 150px;
         height: 150px;
-    }
+    } */
 
     p {
         font-size: 1rem;

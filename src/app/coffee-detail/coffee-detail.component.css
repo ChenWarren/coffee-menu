@@ -27,3 +27,14 @@ img {
     height: 500px;
     object-fit: cover;
 }
+
+@media (max-width: 600px) {
+    img {
+        width: 260px;
+        height: 260px;
+    }
+
+    div {
+        padding: 20px;
+    }
+}

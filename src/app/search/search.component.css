@@ -51,3 +51,10 @@ label {
     display: block;
     color: #8E6844;
 }
+
+@media (max-width: 600px) {
+    input{
+        width: 75%;
+        max-width: none;
+    }
+}
