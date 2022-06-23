@@ -14,7 +14,6 @@ div {
 p {
     flex:1;
     background-color: #fff;
-    padding-left: 30px;
     font-size: 1.5rem;
     font-weight: bold;
     color: #8E6844;
@@ -26,6 +25,12 @@ img {
     height: 300px;
     border-radius: 6px;
     object-fit: cover;
+}
+
+a{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 a:link {
