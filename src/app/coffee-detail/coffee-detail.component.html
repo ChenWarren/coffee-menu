@@ -1,6 +1,6 @@
 <main>
     <div *ngIf="coffeeDetail">
-        <img src={{coffeeDetail.image}}/>
+        <img [src]="coffeeDetail.image"/>
         <h2>Name: {{coffeeDetail.title}}</h2>
         <p>Description: {{coffeeDetail.description}}</p>
     </div>
